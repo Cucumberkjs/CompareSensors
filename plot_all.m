@@ -17,7 +17,7 @@ render_height = 120;
 % xlimval = 180;
 % ylimval = 150;
 % render_height = 120;
-
+% 
 % sensor = 'D455';
 % offset = 0.050;
 % FLIP_X = true;
@@ -67,5 +67,6 @@ if sensor == "SICK"
     view(180,60);
     drawnow;
 end
+savefig(fig, sprintf('Figs/%s-all.fig', sensor));
 saveas(fig, sprintf('Render/%s-all.png', sensor));
 % saveas(fig, sprintf('Render/%s-best.png', sensor));
